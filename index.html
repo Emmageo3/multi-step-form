@@ -78,20 +78,23 @@
           <p>You have the option of monthly or yearly billing.</p>
           <form>
             <div class="cards">
-              <div class="card">
+              <div class="card" data-plan="arcade">
                 <img src="https://emmageo3.github.io/multi-step-form/images/icon-arcade.svg" alt="arcade">
                 <h2>Arcade</h2>
-                <p>$9/mo</p>
+                <p class="monthly-price">$9/mo</p>
+                <p class="hidden yearly-price">$90/yr</p>
               </div>
-              <div class="card">
-                <img src="https://emmageo3.github.io/multi-step-form/images/icon-advanced.svg" alt="arcade">
+              <div class="card" data-plan="advanced">
+                <img src="https://emmageo3.github.io/multi-step-form/images/icon-advanced.svg" alt="advanced">
                 <h2>Advanced</h2>
-                <p>$12/mo</p>
+                <p class="monthly-price">$12/mo</p>
+                <p class="hidden yearly-price">$120/yr</p>
               </div>
-              <div class="card">
-                <img src="https://emmageo3.github.io/multi-step-form/images/icon-pro.svg" alt="arcade">
+              <div class="card" data-plan="pro">
+                <img src="https://emmageo3.github.io/multi-step-form/images/icon-pro.svg" alt="pro">
                 <h2>Pro</h2>
-                <p>$15/mo</p>
+                <p class="monthly-price">$15/mo</p>
+                <p class="hidden yearly-price">$150/yr</p>
               </div>
             </div>
             <div class="period">
@@ -104,9 +107,10 @@
             </div>
             <div class="submit">
               <div class="back">Go back</div>
-              <button>Next Step</button>
+              <button type="button" id="next-step" disabled>Next Step</button>
             </div>
           </form>
+          
         </div>
         <div id="step3" class="hidden">
           <h1>Pick add-ons</h1>

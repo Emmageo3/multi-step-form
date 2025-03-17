@@ -184,6 +184,12 @@
     cursor: pointer;
 }
 
+.form-container .right .cards .card.active{
+    border-radius: 8px;
+    border: 1px solid var(--Purple, #483EFF);
+    background: var(--Very-Light-Grey, #F8F9FF);
+}
+
 .form-container .right .cards .card h2{
     margin-top: 39px;
     color: var(--Denim, #022959);

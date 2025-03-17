@@ -7,6 +7,10 @@
     font-family: "Ubuntu", sans-serif;
 }
 
+.hidden{
+    display: none;
+}
+
 .container{
     background: var(--BG, #EFF5FF);
     height: 100vh;
@@ -47,6 +51,12 @@
     display: flex;
     align-items: center;
     gap: 16px;
+}
+
+.form-container .left .steps .step.active .index{
+    background-color: #BEE2FD;
+    border: none;
+    color: var(--Denim, #022959);
 }
 
 .form-container .left .steps .step .index{
@@ -358,6 +368,7 @@ input:checked + .slider:before {
     border: 1px solid var(--Border-Color, #D6D9E6);
     background: var(--White, #FFF);
     padding: 18px 24px;
+    transition: all .2s ease-in-out;
 }
 
 .addons .addon h4{
@@ -386,5 +397,119 @@ input:checked + .slider:before {
 
 .addon-details .addon-name{
     margin-left: 24px;
+}
+
+.addons .addon:hover{
+    border: 1px solid #483EFF;
+}
+
+.summary{
+    border-radius: 8px;
+    background: var(--Very-Light-Grey, #F8F9FF);
+    padding: 16px 24px;
+}
+
+.summary h2{
+    color: var(--Denim, #022959);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.summary .change{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 7px;
+    border-bottom: 1px solid #9699aa4d;
+    padding-bottom: 24px;
+}
+
+.summary .change a{
+    color: var(--Grey, #9699AA);
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.summary .change a:hover{
+    color: #483EFF;
+}
+
+.summary .change .price{
+    color: var(--Denim, #022959);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.summary-addons{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.summary-addons .sum{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.summary-addons .sum h3{
+    color: var(--Grey, #9699AA);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.summary-addons .sum p{
+    color: var(--Denim, #022959);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.total{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total h3{
+    color: var(--Grey, #9699AA);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.total p{
+    color: var(--Purple, #483EFF) !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+}
+
+.thanks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.thanks img{
+    width: 80px;
+    height: 80px;
+}
+
+.thanks h2{
+    color: var(--Denim, #022959);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.thanks p{
+    color: var(--Grey, #9699AA);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
 }
 

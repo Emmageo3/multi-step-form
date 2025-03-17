@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://emmageo3.github.io/multi-step-form/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Multi-step form</title>
 
@@ -47,28 +47,118 @@
         </div>
       </div>
       <div class="right">
-        <h1>Personal info</h1>
-        <p>Please provide your name, email address, and phone number.</p>
-        <form>
-          <div class="form-groups">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" placeholder="e.g. Stephen King">
+        <div id="step1">
+          <h1>Personal info</h1>
+          <p>Please provide your name, email address, and phone number.</p>
+          <form>
+            <div class="form-groups">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="e.g. Stephen King">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="text" id="name" placeholder="e.g. stephenking@lorem.com">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" placeholder="e.g. +1 234 567 890">
+              </div>
             </div>
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="text" id="name" placeholder="e.g. stephenking@lorem.com">
+            <div class="submit">
+              <div></div>
+              <button>Next Step</button>
             </div>
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="text" id="phone" placeholder="e.g. +1 234 567 890">
+          </form>
+        </div>
+        <!--
+        <div id="step2">
+          <h1>Select your plan</h1>
+          <p>You have the option of monthly or yearly billing.</p>
+          <form>
+            <div class="cards">
+              <div class="card">
+                <img src="https://emmageo3.github.io/multi-step-form/images/icon-arcade.svg" alt="arcade">
+                <h2>Arcade</h2>
+                <p>$9/mo</p>
+              </div>
+              <div class="card">
+                <img src="https://emmageo3.github.io/multi-step-form/images/icon-advanced.svg" alt="arcade">
+                <h2>Advanced</h2>
+                <p>$12/mo</p>
+              </div>
+              <div class="card">
+                <img src="https://emmageo3.github.io/multi-step-form/images/icon-pro.svg" alt="arcade">
+                <h2>Pro</h2>
+                <p>$15/mo</p>
+              </div>
             </div>
-          </div>
-          <div class="submit">
-            <div></div>
-            <button>Next Step</button>
-          </div>
-        </form>
+            <div class="period">
+              <h3 class="active">Monthly</h3>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+              <h3>Yearly</h3>
+            </div>
+            <div class="submit">
+              <div class="back">Go back</div>
+              <button>Next Step</button>
+            </div>
+          </form>
+        </div>
+        <div id="step3">
+          <h1>Pick add-ons</h1>
+          <p>Add-ons help enhance your gaming experience.</p>
+          <form>
+            <div class="addons">
+              <label class="addon">
+                <div class="addon-details">
+                  <div class="addon-check">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </div>
+                  <div class="addon-name">
+                    <h4>Online service</h4>
+                    <span>Access to multiplayer games</span>
+                  </div>
+                </div>
+                <p>+$1/mo</p>
+              </label>
+              <label class="addon">
+                <div class="addon-details">
+                  <div class="addon-check">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </div>
+                  <div class="addon-name">
+                    <h4>Larger storage</h4>
+                    <span>Extra 1TB of cloud save</span>
+                  </div>
+                </div>
+                <p>+$2/mo</p>
+              </label>
+              <label class="addon">
+                <div class="addon-details">
+                  <div class="addon-check">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </div>
+                  <div class="addon-name">
+                    <h4>Customizable profile</h4>
+                    <span>Custom theme on your profile</span>
+                  </div>
+                </div>
+                <p>+$2/mo</p>
+              </label>
+            </div>
+            <div class="submit">
+              <div class="back">Go Back</div>
+              <button>Next Step</button>
+            </div>
+          </form>
+        </div>
+        -->
       </div>
     </div>
   </div>

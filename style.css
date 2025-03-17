@@ -138,12 +138,253 @@
     color: var(--White, #FFF);
     font-size: 16px;
     font-weight: 500;
+    transition: all .2s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container .right form button:hover{
+    background: #164A8A;
+
 }
 
 .form-container .right form .submit{
     display: flex;
     justify-content: space-between;
     margin-top: 15.33%;
+    align-items: center;
 }
 
+.form-container .right .cards{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 35px;
+}
+
+.form-container .right .cards .card{
+    border-radius: 8px;
+    border: 1px solid var(--Border-Color, #D6D9E6);
+    background: var(--White, #FFF);
+    width: 138px;
+    height: fit-content;
+    padding: 20px 16px;
+    width: 33%;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.form-container .right .cards .card h2{
+    margin-top: 39px;
+    color: var(--Denim, #022959);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form-container .right .cards .card p{
+    color: var(--Grey, #9699AA);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form-container .right .cards .card:hover{
+    border: 1px solid var(--Purple, #483EFF);
+
+}
+
+.form-container .right .period{
+    border-radius: 8px;
+    background: var(--Very-Light-Grey, #F8F9FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32Px;
+    padding: 13px 0;
+}
+
+.form-container .right .period h3{
+    color: var(--Grey, #9699AA);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.form-container .right .period h3.active{
+    color: var(--Denim, #022959);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    height: 20px;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #022959;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #022959;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #022959;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(18px);
+}
+  
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.form-container .right form .submit .back{
+    color: var(--Grey, #9699AA);
+    font-size: 16px;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.form-container .right form .submit .back:hover{
+    color: var(--Denim, #022959);
+}
+
+.addon {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .addon input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 40%;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 4Px;
+    border: 1px solid #D6D9E6;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .addon-check input:checked ~ .checkmark {
+    background-color: #483EFF;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .addon-check input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+.addon-check .checkmark:after {
+    left: 6px;
+    top: 2.5px;
+    height: 7.87px;
+    width: 3.43px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.addons{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.addons .addon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid var(--Border-Color, #D6D9E6);
+    background: var(--White, #FFF);
+    padding: 18px 24px;
+}
+
+.addons .addon h4{
+    color: var(--Denim, #022959);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.addons .addon span{
+    color: var(--Grey, #9699AA);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.addons .addon p{
+    color: var(--Purple, #483EFF);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.addon-details{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.addon-details .addon-name{
+    margin-left: 24px;
+}
 
